@@ -3,29 +3,36 @@
 <head>
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
-
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-
 </head>
 <body>
 
 <div class="container">
 <div class="jumbotron">
 <h1> Test site at TGT Training</h1>
-<a href="https://instagram.com/oauth/authorize/?client_id=194ee8e8cb7a407ca2f37cf6d337c823&redirect_uri=http://sharajalva.github.io/feedme/&response_type=token"><button class="btn btn-primary btn-lg">Login with <i class="fa fa-futbol-o"></i>  Instagram</a></button>
+<a href="https://instagram.com/oauth/authorize/?client_id=194ee8e8cb7a407ca2f37cf6d337c823&redirect_uri=http://sharajalva.github.io/feedme/&response_type=token"><button class="btn btn-primary btn-lg">Login with <i class="fa fa-futbol-o"></i>Instagram</a> </button>
 
 </div>
 
-  <div class="row" id="instafeed1" style="padding-top: 50px;">
-        <h1> User photo </h1>
+  <div class="row" id="instafeed" style="padding-top: 50px;">
+        <h1>User photo</h1>
   </div>
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/query/1/11/2/jquery.min.js"></script>
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+<script type+"text/javascript">
+  $(document).ready(function()
+  {
+    console.log("doc is now ready");
+    var imageHolder = $("#instafeed");
+  });
+  
+</script>
+
 </body>
 </html>
